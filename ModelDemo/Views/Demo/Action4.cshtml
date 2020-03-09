@@ -1,0 +1,14 @@
+﻿@using ModelDemo.Models;
+
+@{
+    ViewBag.Title = "Action4";
+    Member m = new Member();
+    m.MemberID = 101;
+    m.Fname = "Nisha";
+    m.LName = "Sethi";
+}
+
+<h2>Action4</h2>
+<p>@ViewBag.Message</p>
+<p><b>@m.Fname</b></n><b>@m.LName</b> @m.MemberID</p>
+

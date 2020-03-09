@@ -1,0 +1,37 @@
+﻿@using DALGame;
+@model DALGame.Game
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<table>
+    <tr>
+
+        <th>@Html.DisplayNameFor(model => model.GameTitle)</th>
+        <th>@Html.DisplayNameFor(model => model.Price)</th>
+
+    </tr>
+    <td>
+        @Html.DisplayFor(model=>model.GameTitle)
+
+
+    </td>
+    <td>
+        @Html.DisplayFor(model=>model.Price)
+
+
+    </td>
+
+    <td>
+        @Html.ActionLink("Edit","Edit")
+        @Html.ActionLink("Go back","Index")
+
+
+    </td>
+    <tr>
+
+    </tr>
+</table>
+

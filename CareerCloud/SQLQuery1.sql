@@ -1,0 +1,1 @@
+﻿select * from Applicant_Educations where id='ab5191b0-f92b-4ba9-b74b-686ffa9b9dc3';

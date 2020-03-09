@@ -1,0 +1,29 @@
+﻿
+@using ModelDemo.Models;
+@model ModelDemo.Models.EndOfTheDayReportVM
+
+@{
+    ViewBag.Title = "Action8";
+}
+
+<h2>Action8</h2>
+<p> @ViewBag.Message</p>
+@* @<p> @Model.memofday.Fname   @Model.memofday.LName</p>*@
+@Html.Partial("_Member", Model.memofday);
+
+<table class="badge">
+
+    @foreach(var item in @Model.mostplayed)
+    {
+
+        <tr>
+            <td>  @item.GameID</td>
+            <td>@item.GameTitle</td>
+            <td>@item.price</td>
+
+    
+    </tr>
+    }
+</table>
+
+

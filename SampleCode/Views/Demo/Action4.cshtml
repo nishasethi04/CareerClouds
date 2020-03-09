@@ -1,0 +1,14 @@
+﻿@using SampleCode.Models;
+@{
+    ViewBag.Title = "Action4";
+    Members m = new Members();//fetch from DB
+    m.MembersID = 101;
+    m.name = "Nisha";
+
+
+}
+
+<h2>Action4</h2>
+<p> @ViewBag.Message</p>
+<p><b>@m.name @m.MembersID</b></p>
+

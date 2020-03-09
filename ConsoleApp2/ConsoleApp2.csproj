@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\niset\source\repos\Program.cs" Link="Program.cs" />
+    <Compile Include="C:\Users\niset\source\repos\Stringreverse.cs" Link="Stringreverse.cs" />
+  </ItemGroup>
+
+</Project>

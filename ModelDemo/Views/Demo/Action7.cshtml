@@ -1,0 +1,23 @@
+﻿@using ModelDemo.Models;
+@model IEnumerable<Member>
+@{
+    ViewBag.Title = "Action7";
+}
+
+
+<h2>Action7</h2>
+<p>@ViewBag.Message</p>
+<p>@Model.First()</p>
+
+@foreach(var item in Model)
+{
+
+    <p>
+
+
+        <b>
+
+            @item.Fname @item.LName
+        </b>
+    </p>
+}

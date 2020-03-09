@@ -1,0 +1,27 @@
+﻿@using DALGame
+@model DALGame.Game
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@using(@Html.BeginForm())
+{
+
+    <b>@Html.LabelFor(model=>model.GameTitle):</b>
+    @Html.EditorFor(model=>model.GameTitle)
+    <br />
+
+    <b>@Html.LabelFor(model=>model.Price):</b>
+    @Html.EditorFor(model=>model.Price)
+    <br />
+    
+<input type="submit" value="Add Game" />  
+
+
+}
+@Html.ActionLink("Back To List","Index")
+
+
+
