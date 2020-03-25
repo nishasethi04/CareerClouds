@@ -12,6 +12,7 @@ namespace CareerCloud.BusinessLogicLayer
         {
 
         }
+       
         protected override void Verify(ApplicantJobApplicationPoco[] pocos)
         {
             List<ValidationException> exceptions = new List<ValidationException>();

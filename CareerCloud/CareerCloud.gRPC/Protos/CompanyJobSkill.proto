@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "CareerCloud.gRPC.Protos";
+import "google/protobuf/empty.proto";
+//import "google/protobuf/timestamp.proto";
+package CareerCloud.gRPC;
+service CompanyJobSkill {
+    rpc ReadCompanyJobSkill(IdRequestJobSkill) returns (CompanyJobSkillPayload);
+	rpc CreateCompanyJobSkill(CompanyJobSkillPayload) returns (google.protobuf.Empty);
+	rpc UpdateCompanyJobSkill(CompanyJobSkillPayload) returns (google.protobuf.Empty);
+	rpc DeleteCompanyJobSkill(CompanyJobSkillPayload) returns (google.protobuf.Empty);
+}
+
+message IdRequestJobSkill{
+		string Id=1;
+	}
+
+	message CompanyJobSkillPayload {
+	 string Id = 1;
+     string Job = 2;
+     string Skill = 3;
+     string SkillLevel = 4;
+     int32 Importance  = 5;
+	
+	}
