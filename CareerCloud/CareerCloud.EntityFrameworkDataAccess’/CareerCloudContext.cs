@@ -10,8 +10,13 @@ using System.Text;
 
 namespace CareerCloud.EntityFrameworkDataAccess
 {
+
     public class CareerCloudContext : DbContext
     {
+        public CareerCloudContext(DbContextOptions<CareerCloudContext> options) : base(options)
+        {
+
+        }
         public DbSet<ApplicantEducationPoco> ApplicantEducations { get; set; }
         public DbSet<ApplicantProfilePoco> ApplicantProfiles { get; set; }
         public DbSet<CompanyDescriptionPoco> CompanyDescriptions { get; set; }
